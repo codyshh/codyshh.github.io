@@ -3,7 +3,7 @@
 }
 
 body {
-	background: #FAEBD7 url('../images/vintage-concrete.png');
+	background: #ffffff;
 	color: #333;
 }
 
@@ -12,7 +12,7 @@ a {
 	color: #333;
 }
 
-a:hover { color: Tomato; }
+a:hover { color: rgb(0, 0, 0); }
 
 header, nav, main, footer {
 	width: 80%;
@@ -22,11 +22,11 @@ header, nav, main, footer {
 
 /* Header styles */
 header { 
-	background-color: #000;
-	color: BlanchedAlmond;
+	background-color: #ffffff;
+	color: rgb(0, 4, 255);
 	min-height: 100px;
 	margin-top: 60px;
-	background-image: url("../images/stars.jpeg");
+	background-image: 
 }
 
 header h1 {
@@ -36,14 +36,14 @@ header h1 {
 
 
 /* Nav styles */
-nav { background-color: #333; }
+nav { background-color: rgb(255, 255, 255); }
 nav ul { 
 	display: flex;
 	justify-content: flex-end;
 }
 nav li { padding: 10px 10px; }
-nav a { color: BlanchedAlmond; }
-nav a:hover { color: white; }
+nav a { color: rgb(0, 0, 0); }
+nav a:hover { color: rgb(0, 4, 225); }
 
 
 /* Main styles */
@@ -70,8 +70,8 @@ aside {
 
 /* Footer styles */
 footer { 
-	background-color: #000;
-	color: white;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
 	text-align: center;
  }
  footer p { padding: 20px; }
