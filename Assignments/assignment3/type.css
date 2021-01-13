@@ -50,6 +50,9 @@ footer{
 	text-align: center;
 	color: white;
 }
+footer{
+	font-family: Arial, Helvetica, sans-serif
+}
 img {
 	display: block;
 	margin-left: auto;
