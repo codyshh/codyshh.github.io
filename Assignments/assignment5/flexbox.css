@@ -1,0 +1,76 @@
+*{
+    background-origin: border-box;
+}
+
+h1,
+h2,
+h3 {
+font-family: Helvetica, sans-serif;
+}
+h1{
+    font-size: 60px;
+    line-height: 68px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+h2{
+    font: 50px;
+    line-height: 58px;
+    margin-bottom: 20px;
+    background-color: darkseagreen;
+}
+
+body{
+    background-color: wheat;
+}
+header,
+main {
+  width: 80%;
+  margin: 40px auto;
+}
+header {
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+header{
+    background-color: cornsilk;
+    border: 1px solid darkseagreen;   
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery div {
+    border: 1px solid wheat;
+    
+  }
+  
+  
+  .gallery div {
+    flex: 1;
+  }
+  img{
+      width: 100%;
+  }
+  .content{
+      display: flex;
+      margin-bottom: 60px;}
+
+      .left{
+        flex: 1;
+        text-align: center;
+    }
+    .right{
+        flex: 1;
+        text-align: center;
+    }
+   
+  .subhead{
+    background-color: cornsilk;
+    border: 1px solid darkseagreen;   
+  }
+
