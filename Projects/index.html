@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<Head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inspiration Station</title>
+    <link rel="stylesheet" href="project1.css">
+    
+</Head>
+<body>
+        <ul>
+            <li><a href="artist1.html"><img src="https://i.ibb.co/LrQfpc8/Asset-1.png" alt="flower-icon"></a>
+            </li>
+            <li><a href="artist2.html"><img src="https://i.ibb.co/hyRSQqd/Asset-2.png" alt="spikey icon"></a></li>
+            <li><a href="artist3.html"><img src="https://i.ibb.co/hmGNrkw/Asset-3.png"></a></li>
+            <li><a href="artist4.html"><img src="https://i.ibb.co/4KpGkXx/Asset-4.png" alt="sparkle icon"></a></li>
+          </ul>
+        
+
+        
+            
+          <button type="button" class="collapsible">Are you feeling uninspired?</button>
+          <div class="content">
+            <p>You've come to the right place!</p>
+          </div>
+
+          <script>var coll = document.getElementsByClassName("collapsible");
+          var i;
+          
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "block";
+              }
+            });
+          }
+        </script>
+        
+    
+</body>
+
+    
