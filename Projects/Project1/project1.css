@@ -1,70 +1,132 @@
-ul {
-    list-style-type: none;
-    margin: 25;
-    padding: 25;
-  }
-  
-  li {
-    float: right;
-  }
-  
-  li a {
-    display: block;
-    color: black;
-    text-align: left;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    -ms-transform: scale(1.5); 
-  -webkit-transform: scale(1.5); 
-  transform: scale(1.5); 
-  }
-  
-  
-  
-  .collapsible {
-    background-color: white;
-    color:black;
-    cursor: pointer;
-    padding: 18px;
-    width: 50%;
-    border: 10px;
-    border-color: black;
-    text-align: center;
-    outline: 10px;
-    font-size: 15px;
-  }
-  
-  .active, .collapsible:hover {
-    background-color: white;
-    border: 10px;
-    border-color: black;
-  }
-  
-  .content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    justify-content: center;
-    background-color: white;
-    
-  }
-  .collapsible:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: white;
-    float: center;
-    margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
-  .title{
-    display: flexbox;
-    align-items: flex-end;
-    justify-content: left;
-    margin-top: 1000px;
-  }
+body{
+font-family: brother-1816, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+.indexbody{
+  background-image: url("https://i.ibb.co/5ntqPZ4/e768e2ce3a16ef4594e40d8032a2ee4c.jpg");
+}
+
+.navbar{
+  width: 100%;
+  overflow: auto;
+}
+.navbar a{
+  float: left;
+  flex: display;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+.navbar a:hover{ 
+transform: scale(1.5);
+transform: rotate(180deg);
+}
+.iconguide{
+  display: flex;
+  flex-direction: column;
+  overflow:scroll;
+  height: 120px;
+  width: 210px;
+  border: 1px solid;
+  background-color: white;
+}
+.iconguide a{
+  display:inline-block;
+}
+.iconguide{
+  float: left;
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+}
+.title{
+  display: flex;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 24pt;
+}
+
+.encouragement{
+  display: flex;
+  flex-direction: column;
+height:max-content;
+width:min-content;
+position:fixed;
+float: right;
+bottom: 15px;
+border: 1px solid;
+right: 15px;
+background-color: white;
+}
+.compliments{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  background-color: white;
+  width: 250px;
+  Height: max-content;
+  text-justify: newspaper;
+  position: fixed;
+  right:15px;
+  top: 15px;
+}
+.compliments{
+  flex-wrap: wrap;
+  padding-left: 15px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+}
+.collapsible{
+  display:flex;
+  flex-direction: column;
+  position:absolute;
+  top: 25px;
+  margin: 0 auto;
+  left: 500px;
+}
+
+.content{
+  display:flex;
+  flex-direction: column;
+  position:absolute;
+  top: 200px;
+  margin: 0 auto;
+  left: 500px;
+}
+.quotebutton{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  background-color: white;
+  position: absolute;
+  top:350px;
+  left: 150px;
+
+}
+
+.quoteDisplay{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  width: max-content;
+  height: max-content;
+  background-color: white;
+  position: absolute;
+  top:300px;
+  left: 150px;
+}
+.question{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid;
+  height: max-content;
+  width: max-content;
+  position: absolute;
+  top:250px;
+  left: 150px;
+}

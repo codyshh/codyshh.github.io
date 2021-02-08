@@ -3,44 +3,105 @@
 <Head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Inspiration Station</title>
-    <link rel="stylesheet" href="project1.css">
-    
-</Head>
-<body>
-        <ul>
-            <li><a href="artist1.html"><img src="https://i.ibb.co/LrQfpc8/Asset-1.png" alt="flower-icon"></a>
-            </li>
-            <li><a href="artist2.html"><img src="https://i.ibb.co/hyRSQqd/Asset-2.png" alt="spikey icon"></a></li>
-            <li><a href="artist3.html"><img src="https://i.ibb.co/hmGNrkw/Asset-3.png"></a></li>
-            <li><a href="artist4.html"><img src="https://i.ibb.co/4KpGkXx/Asset-4.png" alt="sparkle icon"></a></li>
-          </ul>
-        
+  <title>Inspiration Station</title>
+  <link rel="stylesheet" href="https://use.typekit.net/jox7qqv.css">
+    <link rel="stylesheet" href="project1.css"> 
+    <style>
+  .collapsible {
+  background-color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: max-content;
+  border: 1px solid;
+  text-align: left;
+  font-size: 15px;
+  clear: right;
+}
 
-        
-            
-          <button type="button" class="collapsible">Are you feeling uninspired?</button>
-          <div class="content">
-            <p>You've come to the right place!</p>
+.active, .collapsible:hover {
+  background-image: none; 
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+  color: black;
+  border: 1px solid;
+  padding: 18px;
+  width: max-content;
+  border: 1px solid;
+  text-align: left;
+  font-size: 15px;
+}
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+</style>
+   
+      
+</Head>
+<body class="indexbody">
+        <div class="navbar">
+            <a href="artist1.html"><img src="https://i.ibb.co/ZgsLYKt/Asset-1.png" alt="Asset-1" width="50px"> </a>
+            <a href="artist2.html"><img src="https://i.ibb.co/jz3Mhb0/Asset-2.png" alt="Asset-2" width="50px"></a>
+            <a href="artist3.html"><img src="https://i.ibb.co/cLdFVrG/Asset-3.png" alt="Asset-3" width="50px" ></a> 
+            <a href="artist4.html"><img src="https://i.ibb.co/WcNDtvN/Asset-4.png" alt="Asset-4" width="50px"></a> 
+         </div>
+
+         <div class="iconguide">
+           <span class="title">Icon Guide</span><br>
+             <span><a href="artist1.html"><img src="https://i.ibb.co/ZgsLYKt/Asset-1.png" alt="Asset-1" width="50px"></a>Corita Kent</span><br>
+             <span><a href="artist2.html"><img src="https://i.ibb.co/jz3Mhb0/Asset-2.png" alt="Asset-2" width="50px"></a>Simon Hanselmann</span><br>
+             <span><a href="artist3.html"><img src="https://i.ibb.co/cLdFVrG/Asset-3.png" alt="Asset-3" width="50px" ></a>Jessica Hische</span><br>
+             <span><a href="artist4.html"><img src="https://i.ibb.co/WcNDtvN/Asset-4.png" alt="Asset-4" width="50px"></a> Ed Cheverton</span>
           </div>
 
-          <script>var coll = document.getElementsByClassName("collapsible");
-          var i;
+          <div class="encouragement">
+            <marquee behavior="scroll" direction="left">
+            <p>you are more than your portfolio!!! you've got this!!! good luck!!!</p>
+          </marquee>
+          </div>
+
+
+          <button type="button" class="collapsible"> 
+            <h3>are you feeling uninspired?</h3>
+          </button>
+          <div class="content"><h3>you've come to the right place!</h3></div>
+
+  
+            <div class="compliments">
+              <h4>It's gonna be ok! Artist's block will not and can not last forever! :)</h4>
+            </div>
+
+            <span class="question">need an inspiring quote?</span>
+            <br>
+            <div id="quoteDisplay" class="quoteDisplay"></div>
+            
+            <button class="quotebutton" onclick="newQuote()"> click here :) </button>
+
+
+        
+
+
           
-          for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-              this.classList.toggle("active");
-              var content = this.nextElementSibling;
-              if (content.style.display === "block") {
-                content.style.display = "none";
-              } else {
-                content.style.display = "block";
-              }
-            });
-          }
-        </script>
+        
+
+        
+          
+         
+        
+
+            <script src="script.js"></script>   
         
     
 </body>
-
-    
