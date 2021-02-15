@@ -22,3 +22,11 @@ var coll = document.getElementsByClassName("collapsible");
             function newQuote() {
               var randomNumber = Math.floor(Math.random() * quotes.length);
               document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber]; }
+
+              var compliments = [
+                'its gonna be ok, buddy!', 'go easy on yourself','productivity isnt the only sign of success','artists block can not and will not last forever','you are capable of creating beautiful work','be kind to yourself','stop comparing yourself to others!'  
+              ]
+  
+              function newCompliment() {
+                var randomNumber = Math.floor(Math.random() * quotes.length);
+                document.getElementById('complimentDisplay').innerHTML = compliments[randomNumber]; }
