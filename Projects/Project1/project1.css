@@ -4,7 +4,7 @@ font-weight: 400;
 font-style: normal;
 }
 .indexbody{
-  background-image: url("https://i.ibb.co/5ntqPZ4/e768e2ce3a16ef4594e40d8032a2ee4c.jpg");
+  background-color: cornflowerblue;
 }
 
 .navbar{
@@ -38,6 +38,7 @@ transform: rotate(180deg);
   position: fixed;
   left: 15px;
   bottom: 15px;
+  padding: 15px;
 }
 .title{
   display: flex;
@@ -66,7 +67,6 @@ background-color: white;
   background-color: white;
   width: 250px;
   Height: max-content;
-  text-justify: newspaper;
   position: fixed;
   right:15px;
   top: 15px;
@@ -226,12 +226,15 @@ margin-left: 25px;
   }
   .image3{
     object-fit: contain;
+   
   }
   .image2{
     object-fit: contain;
+    
   }
   .image1{
-    object-fit: contain
+    object-fit: contain;
+    
   }
 
  .image3:hover{
@@ -248,21 +251,42 @@ margin-left: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
+   text-align: center;
     overflow: scroll;
+    background-color: white;
    
   }
   .gallery2{
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     justify-content: center;
-  
     overflow: scroll;
+    background-color: white;
   }
   .gallery3{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+    text-align: center;
     overflow: scroll;
+    background-color: white;
   }
+
+ .artist1body{
+   background-color: darkkhaki;
+ }
+
+ .artist2body{
+  background-color: olive;
+}
+
+.artist3body{
+  background-color: orchid;
+}
+.artist4body{
+  background-color: bisque;
+}
+.website{
+  background-color: white;
+}
