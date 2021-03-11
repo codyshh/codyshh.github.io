@@ -35,3 +35,22 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
+
+var quotes = [
+  'a shirt fit for a pirate grandpa',
+  'a skirt your mom would have worn to the mall in 1984',
+  'a vest that would make a fisherman jealous',
+  'big clunky shoes to stomp around in',
+  'a long flowy dress that may or may not be haunted',
+  'a wall hanging that reminds you of the Space Race',
+  'a ratty t-shirt that says AC/DC with the Australian pronunciation (AccaDacca)',
+  'Harley Davidson brand cullotes',
+  'Orange Tab levis that fit your butt perfectly but have a mysterious stain',
+  'dansko clogs that say built for riverdance across the toes',
+  'a cursed teddy bear sweater',
+  'a sweatshirt that says Born to Be Cozy on the front, and Forced to Be Awake on the back'
+]
+
+function newQuote() {
+  var randomNumber = Math.floor(Math.random() * quotes.length);
+  document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber]; }
