@@ -23,33 +23,7 @@ body {
   color:black
  }
 
- .print{
-   border-radius: 50%;
-   background-color: cornflowerblue;
-   border: none;
-  
-  
- }
- .download{
-  border-radius: 50%;
-  background-color: cornflowerblue;
-  border: none;
- 
- }
- .wework{
-   display: flex;
-   flex-direction: column;
-   text-align: center, justify;
- }
- .covidsafety{
-  display: flex;
-  flex-direction: column;
-   text-align: center, justify;
- }
- header{
-   text-align: center;
- }
-/* Style the navigation menu */
+ /* Style the navigation menu */
 .topnav {
   overflow: hidden;
   background-color: cornflowerblue;
@@ -94,58 +68,6 @@ body {
   padding-left: 10px;
   border-radius: 25px;
 }
-.printdownload{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin-top: 50px;
-  justify-content: center;
-  
-}
-
-.quoteBox{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 800px;
-}
-.covidsafety{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 800px;
-}
-.wework{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  max-width: 800px;
-}
-
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  margin-top: 50px;
-  border-radius: 25px;
-}
-.mapmap1{
-  border: white;
-  border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -221,6 +143,14 @@ body {
   animation-name: fade;
   animation-duration: 1.5s;
 }
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 25px;
+}
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
@@ -231,6 +161,82 @@ body {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+
+
+
+ .print{
+   border-radius: 50%;
+   background-color: cornflowerblue;
+   border: none;
+  
+  
+ }
+ .download{
+  border-radius: 50%;
+  background-color: cornflowerblue;
+  border: none;
+ 
+ }
+
+ .covidsafety{
+  display: flex;
+  flex-direction: column;
+   text-align: center, justify;
+ }
+ header{
+   text-align: center;
+ }
+
+.printdownload{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+  
+}
+
+.quoteBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
+.covidsafety{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
+.wework{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center, justify;
+  max-width: 800px;
+}
+
+img{
+  width: 100%;
+}
+* {box-sizing:border-box}
+
+
+.mapmap1{
+  border: white;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .wework{
   border-radius: 25px;
   background-color: white;
@@ -293,7 +299,7 @@ border-radius: 25px;
   margin-bottom: 50px;
   margin-top: 50px;
   box-sizing: border-box;
-  width: 640px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -309,9 +315,8 @@ border-radius: 25px;
   padding-right: 10px;
   margin-bottom: 50px;
   margin-top: 50px;
-  width: 640px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
   box-sizing: border-box; 
@@ -364,7 +369,7 @@ margin: auto;
   padding-bottom: 10px;
   text-align: center;
   justify-content: space-evenly;
-  width: 25%;
+  
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 50%;
@@ -423,9 +428,20 @@ margin: auto;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-
 }
-.pdxstore, .vcstore{
+
+.storetitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pdxstore{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background-color: white;
  border-radius: 25px;
  margin-bottom: 25px;
@@ -434,15 +450,24 @@ margin: auto;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-
+  width: 583px;
 }
-.pdxstore, .vcstore{
+.vcstore{
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-color: white;
+ border-radius: 25px;
+ margin-bottom: 25px;
+ margin-top: 25px;
+ padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
 .map, .map2{
   display: flex;
   align-items: center;
@@ -457,8 +482,7 @@ margin: auto;
 .platforms, .options{
   background-color: white;
   border-radius: 25px;
-  margin-top: 25px;
-  margin-bottom: 10px;
+  margin: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -487,4 +511,235 @@ margin: auto;
   }
   .pdxinstagram:hover{
     background-color: #eede52;
+  }
+  .options, .platforms{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .desktopnavigation{
+display: none;
+  }
+  .desktoplogo{
+    display: none;
+  }
+
+  @media only screen and (min-width: 768px) {
+  .topnav{ display: none;}
+
+  .desktopnavigation{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  .home{
+    border-radius: 25px;
+    background-color: cornflowerblue;
+    border: none;
+    text-align: justify, center;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  .about{
+    border-radius: 25px;
+    background-color: cornflowerblue;
+    border: none;
+    text-align: justify, center;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  .hours{
+    border-radius: 25px;
+    background-color: cornflowerblue;
+    border: none;
+    text-align: justify, center;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  .media{
+    border-radius: 25px;
+    background-color: cornflowerblue;
+    border: none;
+    text-align: justify, center;
+    text-decoration: none;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+
+  .desktoplogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+.aboutpage{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly, center;
+  margin: 25px;
+}
+.aboutus, .aboutpic{
+  margin: 25px;
+}
+.selling{
+  display: flex;
+  justify-content: space-around, center;
+  align-content: center;
+  margin: 25px;
+  width: 900px;
+}
+.sellingbit{
+  display: flex;
+  justify-content: center;
+}
+
+.googlemap2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex: 1;
+  margin: 25px;
+}
+.schedule1, .schedule2{
+  width: 600px;
+  margin: 25px;
+}
+.vcstore{
+  display: flex;
+  margin: 25px;
+  width: 583px;
+  justify-content: center;
+  align-items: center;
+}
+.vcstoretitle{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.hourspage{
+  display: flex;
+  flex-direction: row;
+}
+
+.optionsbuttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.pdxmediabuttons{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+.vcmediabuttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  }
+  .options{
+    margin-top: 50px;
+  }
+.buttonsections{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 25px;
+}
+.pdxcolumn{
+  display: flex;
+  flex-direction: column;
+}
+.vccolumn{
+  display:flex;
+  flex-direction: column;
+}
+
+.vc, .pdx{
+  margin:25px;
+}
+.pdxinstagram{
+  width: fit-content;
+}
+.VCinstagram{
+  width: fit-content;
+}
+.pdxfacebook{
+  width: fit-content;
+}
+.VCfacebook{
+  width: fit-content;
+}
+.etsy{
+  width: 150px;
+  margin: 25px;
+}
+.ebay{
+  width: 150px;
+  margin: 25px;
+}
+.rubylane{
+  width: 150px;
+  margin: 25px;
+}
+
+.topparagraph{
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+
+.wework{
+  height: 477px;
+  width: 400px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.pleasework{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.covidsafety{
+  margin: 25px;
+}
+
+
+
   }
